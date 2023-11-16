@@ -1,0 +1,116 @@
+/* START: Navigation Bar */
+body.index {
+    background-image: url(../images/foto1.indexx.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+nav {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav img {
+    width: 50px;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+
+
+nav ul li a:hover {
+    background-color: #f4f4f4;
+    color: #967259;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+
+
+
+
+/* END: Navigation Bar */
+
+/* START: Home Page */
+.discHead {
+    margin-top: 195px;
+    margin-left: 75px;
+    color: whitesmoke;
+    animation: neonR 2.0s infinite alternate;
+
+
+}
+
+.text-animation {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 45px;
+}
+
+.text-animation {
+    font-size: 24px;
+    animation: moveText 2s linear infinite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text-animation {
+    font-size: 48px;
+    color: #00f;
+    text-shadow: 0 0 10px #00f, 0 0 10px #00f, 0 0 10px #00f;
+    animation: neonF 1s infinite alternate;
+}
+
+@keyframes neonF {
+    0% {
+        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+        color: #00f;
+    }
+
+    100% {
+        text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+        color: #0af;
+    }
+}
+
+
+
+.order h1 {
+
+    position: relative;
+    margin-left: 65px;
+    margin-top: 175px;
+    color: white;
+}
+
+.order h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.order h1 a:hover {
+    color: skyblue;
+    text-decoration: none;
+
+}
+
+
+
+/* END: Home page */
