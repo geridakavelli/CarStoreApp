@@ -1,3 +1,18 @@
+// // //Function for order button to go to login page 
+var buttons = document.querySelectorAll(".button");
+
+buttons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    // Specify the URL of the new page you want to open
+    var newPageUrl ="login.html";
+
+    // Open the new page in a new browser window or tab
+    window.open(newPageUrl);
+   
+  });
+});
+//End of order button that sends us to login page
+
 
 // start login event to go in cart page
 function validateAndSubmit(event) {
@@ -43,3 +58,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
 })
 //end login 
+
+//show password
+onclick = togglePassword;
+function togglePassword()
+{
+ if(check.checked) password.type = "text";
+ else password.type = "password"
+};
+
+//end show password
