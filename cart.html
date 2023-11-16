@@ -1,0 +1,125 @@
+<html>
+ <head>
+<title>CART PAGE</title>
+<link rel="icon" href="./assets/images/cart.jpg">
+<link rel="stylesheet" href="./assets/styles/custom.css">
+
+
+ </head>
+ <body class="cart">
+    
+
+    <nav >
+        <img src="./assets/images/ger.png" width="50px">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="brand.html">Car Brand</a></li>
+           
+            <li><a href="cart.html">Cart</a>
+                 </li>
+        </ul>
+    </nav>
+
+
+    <h2 class="cartH2">All Orders </h2>
+
+    <table class="cart1">
+        <thead>
+            <tr>
+                <th>Car Model</th>
+                <th>Car Brand</th>
+                <th> Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+      
+        
+   
+        </tbody>
+    </table>
+
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <div class="header-container">
+                <h5>Edit Order</h5>
+                <span id="closeEditModalSpn" class="close">&times;</span>
+            </div>
+            
+            <form id="orderForm">
+                <div>
+                    <label for="CarModel">Car Model</label>
+                    <input type="text" id="CarModel" name="CarModel" placeholder="CarModel ">
+                    <span id="CarModelSpn"></span>
+                </div>
+        
+                <div>
+
+                    <label for="carBrand">Car Brand</label>
+                    <input type="text" id="carBrand" name="carBrand" placeholder="carBrand">
+                    <span id="CarBrandSpn"></span>
+                </div>
+        
+                <div>
+                    <label for="Price">Price</label>
+                    <input type="number" id="Price" name="Price" placeholder=" Price">
+                    <span id="PriceSpn"></span>
+                </div>
+        
+                
+            </form>
+        </div>
+    </div>
+  
+    <!-- Inside the body tag, but outside of other tags -->
+    <div id="removeModal" class="modal">
+        <div class="modal-content">
+            <h2 id="remove-CarBrand"></h2>
+            <h2 id="remove-CarModel"></h2>
+
+            <p>Are you sure you want to remove this order?</p>
+            <p> 
+                
+                <h2 id="remove-Price"></h2>
+
+                
+                <button type="button" id="cancelRemoveBtn">Cancel</button>
+                <button type="button" id="conBtn">Confirm</button>
+            </p>
+        </div>
+    </div>
+
+    <!-- Inside the body tag, but outside of other tags -->
+    <div id="continueModal" class="modal">
+        <div class="modal-content">
+            <h2 id="continue-CarBrand"></h2>
+            <h2 id="continue-CarModel"></h2>
+            <p>Do you confirm this order?</p>
+            <p>
+                
+                <button type="button" id="yesBtn">Yes</button>
+                <button type="button" id="noBtn">No</button>
+
+            </p>
+        </div>
+    </div>
+
+
+
+
+    
+<!-- <div> 
+    <footer class="footer">Alvjo Dauti ,Florin Kola  ,Geri Dakavelli</footer>
+</div> -->
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type="text/javascript" src="./assets/scripts/javacript.js"></script>
+
+
+ </body>
+
+
+</html>
