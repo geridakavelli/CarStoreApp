@@ -211,7 +211,22 @@ body.index{
   
   }
   
-  
+  #usernameCart{
+    color:#fff;
+    text-align: center;
+    animation: neonch 1s infinite alternate;
+    font-size: xx-large;
+    }
+    @keyframes neonch {
+    0% {
+      text-shadow: 0 0 10px #6414FE, 0 0 30px #FE14AE, 0 0 40px #FE14AE;
+      color: #fff;
+    }
+    100% {
+      text-shadow: 0 0 20px #6414FE, 0 0 30px #FE14AE, 0 0 40px #FE14AE;
+      color: #FFF;
+    }
+    }
   
   nav ul li a:hover {
   background-color: #f4f4f4;
