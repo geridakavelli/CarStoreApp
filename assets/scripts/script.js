@@ -43,11 +43,25 @@ function validateAndSubmit(event) {
     if (isValidated == false) {
         return;
     }
-
+    
+    var localstorage = JSON.parse(localStorage.getItem('users')) || [ ];
+    localstorage.push(username);
+    localStorage.setItem('users', JSON.stringify(localstorage));
+    
+//     localStorage.setItem('users',username);
+//     var storedUser = localStorage.getItem('users');
+// //     console.log("user:",storedUser);
+//     document.getElementById("usernameCart").innerText=storedUser;
+//     //var storedUser = localStorage.getItem(id);
+//     // // var text=localStorage.getItem('id');
+//     // document.getElementById("usernameCart").innerHTML=storedUser;
+//     // $('#usernameCart').text(text);
+//     // document.writeln(localStorage.getItem(id));
+   
     var PageUrl = "cart.html";
-    var closelog = "login.html"
-    window.open(PageUrl);
-    window.close(closelog)
+    var closelog = "login.html";
+    window.location.href = PageUrl;
+    // window.close(closelog)
 }
 
 
@@ -68,6 +82,19 @@ function togglePassword()
 };
 
 //end show password
+
+//show username on cart
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  var localstorage = JSON.parse(localStorage.getItem('users'));
+
+  if (localstorage.length > 0) {
+    document.getElementById("usernameCart").innerHTML = localstorage.join(', ');
+}
+});
+
+
+
 
 //make cart page button active for pop up
 
@@ -91,6 +118,7 @@ class Order{
     new Order(2,'911 TURBO S', 'PORSCHE','$180,345'),
     new Order(3,'','','Total = $220,345')
   ];
+
   
   //Get Table -> <tbody>
   const ordersTableBody = $(".cart1 tbody");
